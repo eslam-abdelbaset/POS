@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectAPI", "ProjectAPI\ProjectAPI.csproj", "{4103A9E0-A316-4A02-85FC-7F93359FFCAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBMigrations", "DBMigration\DBMigrations.csproj", "{4FB5D5E4-F20B-403E-A0D2-11827E26AE31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{2CD4398B-1627-4D71-9B31-7EB7F31E6BFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{A8FAAAC6-9B24-4B5E-8D65-FA64D444FBA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4103A9E0-A316-4A02-85FC-7F93359FFCAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4103A9E0-A316-4A02-85FC-7F93359FFCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4103A9E0-A316-4A02-85FC-7F93359FFCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4103A9E0-A316-4A02-85FC-7F93359FFCAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB5D5E4-F20B-403E-A0D2-11827E26AE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB5D5E4-F20B-403E-A0D2-11827E26AE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB5D5E4-F20B-403E-A0D2-11827E26AE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB5D5E4-F20B-403E-A0D2-11827E26AE31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD4398B-1627-4D71-9B31-7EB7F31E6BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD4398B-1627-4D71-9B31-7EB7F31E6BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD4398B-1627-4D71-9B31-7EB7F31E6BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD4398B-1627-4D71-9B31-7EB7F31E6BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8FAAAC6-9B24-4B5E-8D65-FA64D444FBA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FAAAC6-9B24-4B5E-8D65-FA64D444FBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8FAAAC6-9B24-4B5E-8D65-FA64D444FBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FAAAC6-9B24-4B5E-8D65-FA64D444FBA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B63D3049-8E18-4444-A5A0-D6F4CA3EAF92}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/newprojectorg
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BLL\\BLL.csproj
+		SccProjectName1 = BLL
+		SccLocalPath1 = BLL
+		SccProjectUniqueName2 = DAL\\DAL.csproj
+		SccProjectName2 = DAL
+		SccLocalPath2 = DAL
+		SccProjectUniqueName3 = DBMigration\\DBMigrations.csproj
+		SccProjectName3 = DBMigration
+		SccLocalPath3 = DBMigration
+		SccProjectUniqueName4 = ProjectAPI\\ProjectAPI.csproj
+		SccProjectName4 = ProjectAPI
+		SccLocalPath4 = ProjectAPI
+	EndGlobalSection
+EndGlobal
