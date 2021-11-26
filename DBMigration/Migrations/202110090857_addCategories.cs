@@ -24,7 +24,7 @@ namespace DBMigrations.Migrations
                 .WithColumn("CategoryDescription").AsString(250).Nullable()
                 .WithColumn("ParentCategoryId").AsInt32().Nullable()
                 .WithColumn("CategoryImagePath").AsString(150).Nullable()
-                .WithColumn("IsActive").AsBoolean().WithDefaultValue(true);
+                .WithColumn("IsActive").AsBoolean();
         }
     }
 }

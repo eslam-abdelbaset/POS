@@ -17,10 +17,10 @@ namespace DBMigrations.Migrations
 
         public override void Up()
         {
-            Create.Table("CustomersTypes")
-                .WithColumn("CustomerTypeId").AsInt32().NotNullable().PrimaryKey().Identity(1,1)
-                .WithColumn("CustomerTypeName").AsString(100).NotNullable()
-                .WithColumn("CustomerTypeDesciption").AsString(250).Nullable();
+            Create.Table("CustomerTypes")
+                .WithColumn("Id").AsInt32().NotNullable().PrimaryKey().Identity(1,1)
+                .WithColumn("Name").AsString(100).NotNullable()
+                .WithColumn("Desciption").AsString(250).Nullable();
         }
     }
 }

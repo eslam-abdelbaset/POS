@@ -16,9 +16,10 @@ namespace DBMigration.Migration.Extention
             var runner = scope.ServiceProvider.GetService<IMigrationRunner>();
             runner.ListMigrations();
             //runner.MigrateUp(202110090925);
-            runner.MigrateUp(202109070239);
+            //runner.MigrateUp(202109070239);
             //runner.MigrateUp(202110090857);
-            runner.MigrateUp(202110090914);
+            //runner.MigrateUp(202110090914);
+            //runner.MigrateUp(202111261821);
             return app;
         }
     }

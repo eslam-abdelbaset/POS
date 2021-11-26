@@ -48,7 +48,7 @@ namespace ProjectAPI
             });
             // For Entity Framework  
             services.AddDbContext<AuthContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnStr")));
-            services.AddDbContext<MyDBContext>(o => o.UseSqlServer(Configuration.GetConnectionString("ConnStr")));
+            services.AddDbContext<MyDBContext>(o => o.UseSqlServer(Configuration.GetConnectionString("ConnStr")));  
             // For Identity  
             //services.AddIdentity<ApplicationUser, IdentityRole>()
             //    .AddEntityFrameworkStores<AuthContext>()

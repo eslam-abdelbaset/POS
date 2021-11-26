@@ -8,14 +8,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Models
 {
-    [Keyless]
-    [Table("VersionInfo")]
-    public partial class VersionInfo
+    [Table("Company")]
+    public partial class Company
     {
-        public long Version { get; set; }
-        [Column(TypeName = "datetime")]
-        public DateTime? AppliedOn { get; set; }
-        [StringLength(1024)]
+        [Key]
+        public int CompanyId { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string Name { get; set; }
+        [StringLength(255)]
         public string Description { get; set; }
+        public bool? IsActive { get; set; }
     }
 }

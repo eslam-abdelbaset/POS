@@ -17,17 +17,17 @@ namespace DBMigrations.Migrations
 
         public override void Up()
         {
-            Create.Table("Customers")
-                 .WithColumn("CustomerId").AsInt32().NotNullable().PrimaryKey().Identity(1, 1)
-                 .WithColumn("CustomerName").AsString().NotNullable()
-                 .WithColumn("CustomerPhone").AsString().NotNullable()
-                 .WithColumn("CustomerAddress").AsString().NotNullable()
+            Create.Table("Customer")
+                 .WithColumn("Id").AsInt32().NotNullable().PrimaryKey().Identity(1, 1)
+                 .WithColumn("Name").AsString().NotNullable()
+                 .WithColumn("Phone").AsString().NotNullable()
+                 .WithColumn("Address").AsString().NotNullable()
                  .WithColumn("BirthDate").AsDate().Nullable()
-                 .WithColumn("CustomerDescription").AsString(250)
-                 .WithColumn("CustomerEmail").AsString(50)
-                 .WithColumn("CustomerTypeId").AsInt32().NotNullable()
+                 .WithColumn("Description").AsString(250)
+                 .WithColumn("Email").AsString(50)
+                 .WithColumn("TypeId").AsInt32().NotNullable()
                  .WithColumn("IsActive").AsBoolean().WithDefaultValue(true);
-            Create.ForeignKey().FromTable("Customers").ForeignColumn("CustomerTypeId").ToTable("CustomersTypes").PrimaryColumn("CustomerTypeId");
+            Create.ForeignKey().FromTable("Customer").ForeignColumn("TypeId").ToTable("CustomerTypes").PrimaryColumn("Id");
         }
     }
 }
